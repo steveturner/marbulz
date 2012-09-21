@@ -1,20 +1,30 @@
-/*
- * Kobold2D™ --- http://www.kobold2d.org
- *
- * Copyright (c) 2010-2011 Steffen Itterheim. 
- * Released under MIT License in Germany (LICENSE-Kobold2D.txt).
- */
+//
+//  GameScene.m
+//  Marbulz
+//
+//  Created by Steven Turner on 9/20/12.
+//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//
 
-#import "HelloWorldLayer.h"
+#import "GameScene.h"
 #import "SimpleAudioEngine.h"
 
-@interface HelloWorldLayer (PrivateMethods)
+@interface GameScene (PrivateMethods)
 @end
 
-@implementation HelloWorldLayer
+@implementation GameScene
 
 @synthesize helloWorldString, helloWorldFontName;
 @synthesize helloWorldFontSize;
+
++(id) scene
+{
+	CCScene* s = [CCScene node];
+	id node = [GameScene node];
+	[s addChild:node];
+	return s;
+}
+
 
 -(id) init
 {
@@ -93,9 +103,36 @@
 
 		// play sound with CocosDenshion's SimpleAudioEngine
 		[[SimpleAudioEngine sharedEngine] playEffect:@"Pow.caf"];
+		
+		[self scheduleUpdate];
+		
 	}
 
 	return self;
+}
+
+-(void) update:(ccTime)delta
+{
+	KKInput* input = [KKInput sharedInput];
+	if (input.touchesAvailable)
+	{
+		NSUInteger color = 0;
+		KKTouch* touch;
+		CCARRAY_FOREACH(input.touches, touch)
+		{
+			CCLOG(@"Touch: mov=%d ",[touch phase]);
+		}
+	}
+		
+	if ([input isAnyTouchOnNode:self touchPhase:KKTouchPhaseAny])
+	{
+		CCLOG(@"Touch: beg=%d mov=%d sta=%d end=%d can=%d",
+			  [input isAnyTouchOnNode:self touchPhase:KKTouchPhaseBegan],
+			  [input isAnyTouchOnNode:self touchPhase:KKTouchPhaseMoved],
+			  [input isAnyTouchOnNode:self touchPhase:KKTouchPhaseStationary],
+			  [input isAnyTouchOnNode:self touchPhase:KKTouchPhaseEnded],
+			  [input isAnyTouchOnNode:self touchPhase:KKTouchPhaseCancelled]);
+	}
 }
 
 @end
