@@ -31,6 +31,10 @@
 	ContactListener* contactListener;
 	
 	GLESDebugDraw* debugDraw;
+	
+	
+	// in z order:
+	GameBackground* background;
 
 	
 	

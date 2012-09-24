@@ -9,6 +9,7 @@
 #import "GameScene.h"
 #import "SimpleAudioEngine.h"
 #import "Box2DDebugLayer.h"
+#import "GameBackground.h"
 
 @interface GameScene (PrivateMethods)
 @end
@@ -35,13 +36,23 @@
 		
 		CCDirector* director = [CCDirector sharedDirector];
 		
-		
+		background = [GameBackground background];
+		[self addChild:background z:0];
 		// init the box2d world
 		b2Vec2 gravity = b2Vec2(0.0f, -10.0f);
 		world = new b2World(gravity);
 		world->SetAllowSleeping(YES);
 		
-		CCSprite* sprite = [CCSprite spriteWithFile:@"ship.png"];
+		CCMenuItem *starMenuItem = [CCMenuItemImage
+									itemFromNormalImage:@"Ball_6.png" selectedImage:@"Ball_5.png"
+									target:self selector:@selector(starButtonTapped:)];
+		starMenuItem.position = ccp(60, 60);
+		CCMenu *starMenu = [CCMenu menuWithItems:starMenuItem, nil];
+		starMenu.position = CGPointZero;
+		[self addChild:starMenu];
+		
+		
+		CCSprite* sprite = [CCSprite spriteWithFile:@"Ball_6.png"];
 		sprite.position = director.screenCenter;
 		sprite.scale = 0;
 		[self addChild:sprite];

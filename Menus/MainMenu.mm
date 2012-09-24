@@ -31,6 +31,9 @@
 		
 		// the main menu is just a placeholder to stuff in all your menu needs, it is for you to extend
 		// for now it simply advances to the GameScene
+		
+		
+		
 		[self schedule:@selector(nextScene:) interval:0.2f];
 	}
 	
@@ -45,6 +48,9 @@
 -(void) nextScene:(ccTime)delta
 {
 	[self unschedule:_cmd];
+	
+	
+	
 	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:1.0f scene:[GameScene scene] withColor:ccBLACK]];
 }
 

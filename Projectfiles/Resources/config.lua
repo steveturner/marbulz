@@ -23,7 +23,7 @@ local config =
 		DisplayFPS = YES,
 
 		EnableUserInteraction = YES,
-		EnableMultiTouch = NO,
+		EnableMultiTouch = YES,
 
 		-- Render settings
 		DefaultTexturePixelFormat = TexturePixelFormat.RGBA8888,
@@ -40,7 +40,15 @@ local config =
 		-- Orientation & Autorotation
 		-- Kobold2D uses the supported orientations from the Target's Summary pane: http://cl.ly/2l132Z2f463H2O3r0M1O
 		-- (same as Info.plist key UISupportedInterfaceOrientations aka "Supported interface orientations")
-	
+-- Orientation & Autorotation
+DeviceOrientation = DeviceOrientation.PortraitLeft,
+AutorotationType = Autorotation.UIViewController,
+ShouldAutorotateToLandscapeOrientations = NO,
+ShouldAutorotateToPortraitOrientations = YES,
+AllowAutorotateOnFirstAndSecondGenerationDevices = YES,
+
+
+
 		-- iAd setup
 		EnableAdBanner = YES,
 		PlaceBannerOnBottom = NO,
