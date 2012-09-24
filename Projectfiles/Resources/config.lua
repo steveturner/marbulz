@@ -41,10 +41,17 @@ local config =
 		-- Kobold2D uses the supported orientations from the Target's Summary pane: http://cl.ly/2l132Z2f463H2O3r0M1O
 		-- (same as Info.plist key UISupportedInterfaceOrientations aka "Supported interface orientations")
 -- Orientation & Autorotation
+<<<<<<< HEAD
 DeviceOrientation = DeviceOrientation.PortraitLeft,
 AutorotationType = Autorotation.UIViewController,
 ShouldAutorotateToLandscapeOrientations = NO,
 ShouldAutorotateToPortraitOrientations = YES,
+=======
+DeviceOrientation = DeviceOrientation.LandscapeRight,
+AutorotationType = Autorotation.UIViewController,
+ShouldAutorotateToLandscapeOrientations = YES,
+ShouldAutorotateToPortraitOrientations = NO,
+>>>>>>> Moving files around and fixing fixes implementation.
 AllowAutorotateOnFirstAndSecondGenerationDevices = YES,
 
 

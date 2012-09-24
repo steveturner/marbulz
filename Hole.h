@@ -6,8 +6,14 @@
 //
 //
 
+
 #import "BodyNode.h"
 
-@interface Hole : BodyNode
+
+@interface Hole : BodyNode {
+	
+}
+
++(id) newHoleInWorld:(b2World*)world withPos:(CGPoint)pos;
 
 @end

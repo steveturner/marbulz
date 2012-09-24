@@ -13,6 +13,15 @@
 		AA8412FB160E3A3C0066CF56 /* ContactListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA8412F3160E3A3C0066CF56 /* ContactListener.mm */; };
 		AA8412FC160E3A3C0066CF56 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA8412F5160E3A3C0066CF56 /* GLES-Render.mm */; };
 		AA8412FD160E3A3C0066CF56 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA8412F5160E3A3C0066CF56 /* GLES-Render.mm */; };
+<<<<<<< HEAD
+=======
+		AA8F0DE116101CC90053E97B /* BodyNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA8F0DE016101CC90053E97B /* BodyNode.mm */; };
+		AA8F0DE416101D920053E97B /* Ball.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA8F0DE316101D920053E97B /* Ball.mm */; };
+		AA8F0DE716101E250053E97B /* Helper.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA8F0DE616101E250053E97B /* Helper.mm */; };
+		AA8F0DEB16101F3B0053E97B /* GB2ShapeCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA8F0DEA16101F3B0053E97B /* GB2ShapeCache.mm */; };
+		AA8F0DEE161020130053E97B /* Hole.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA8F0DED161020130053E97B /* Hole.mm */; };
+		AA8F0DF1161035670053E97B /* CCMask.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8F0DF0161035670053E97B /* CCMask.m */; };
+>>>>>>> Moving files around and fixing fixes implementation.
 		AA91EC58160FFFA900632DE0 /* GameBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = AA91EC57160FFFA900632DE0 /* GameBackground.m */; };
 		AA91EC59160FFFA900632DE0 /* GameBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = AA91EC57160FFFA900632DE0 /* GameBackground.m */; };
 		AA91EC8D1610026400632DE0 /* Atomic.png in Resources */ = {isa = PBXBuildFile; fileRef = AA91EC5A1610026400632DE0 /* Atomic.png */; };
@@ -184,6 +193,22 @@
 		AA8412F3160E3A3C0066CF56 /* ContactListener.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ContactListener.mm; sourceTree = "<group>"; };
 		AA8412F4160E3A3C0066CF56 /* GLES-Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLES-Render.h"; sourceTree = "<group>"; };
 		AA8412F5160E3A3C0066CF56 /* GLES-Render.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "GLES-Render.mm"; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+		AA8F0DDF16101CC90053E97B /* BodyNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BodyNode.h; path = Projectfiles/BodyNode.h; sourceTree = "<group>"; };
+		AA8F0DE016101CC90053E97B /* BodyNode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = BodyNode.mm; path = Projectfiles/BodyNode.mm; sourceTree = "<group>"; };
+		AA8F0DE216101D920053E97B /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ball.h; sourceTree = "<group>"; };
+		AA8F0DE316101D920053E97B /* Ball.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Ball.mm; sourceTree = "<group>"; };
+		AA8F0DE516101E250053E97B /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
+		AA8F0DE616101E250053E97B /* Helper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Helper.mm; sourceTree = "<group>"; };
+		AA8F0DE816101E410053E97B /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		AA8F0DE916101F3A0053E97B /* GB2ShapeCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GB2ShapeCache.h; sourceTree = "<group>"; };
+		AA8F0DEA16101F3B0053E97B /* GB2ShapeCache.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GB2ShapeCache.mm; sourceTree = "<group>"; };
+		AA8F0DEC161020130053E97B /* Hole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hole.h; sourceTree = "<group>"; };
+		AA8F0DED161020130053E97B /* Hole.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Hole.mm; sourceTree = "<group>"; };
+		AA8F0DEF161035670053E97B /* CCMask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMask.h; sourceTree = "<group>"; };
+		AA8F0DF0161035670053E97B /* CCMask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMask.m; sourceTree = "<group>"; };
+>>>>>>> Moving files around and fixing fixes implementation.
 		AA91EC56160FFFA900632DE0 /* GameBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBackground.h; sourceTree = "<group>"; };
 		AA91EC57160FFFA900632DE0 /* GameBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBackground.m; sourceTree = "<group>"; };
 		AA91EC5A1610026400632DE0 /* Atomic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Atomic.png; sourceTree = "<group>"; };
@@ -346,12 +371,22 @@
 		AA8412EC160E3A200066CF56 /* Physics */ = {
 			isa = PBXGroup;
 			children = (
+				AA8F0DE916101F3A0053E97B /* GB2ShapeCache.h */,
+				AA8F0DEA16101F3B0053E97B /* GB2ShapeCache.mm */,
+				AA8F0DE516101E250053E97B /* Helper.h */,
+				AA8F0DE616101E250053E97B /* Helper.mm */,
 				AA8412EE160E3A3C0066CF56 /* Box2DDebugLayer.h */,
 				AA8412EF160E3A3C0066CF56 /* Box2DDebugLayer.mm */,
 				AA8412F2160E3A3C0066CF56 /* ContactListener.h */,
 				AA8412F3160E3A3C0066CF56 /* ContactListener.mm */,
 				AA8412F4160E3A3C0066CF56 /* GLES-Render.h */,
 				AA8412F5160E3A3C0066CF56 /* GLES-Render.mm */,
+				AA8F0DDF16101CC90053E97B /* BodyNode.h */,
+				AA8F0DE016101CC90053E97B /* BodyNode.mm */,
+				AA8F0DE216101D920053E97B /* Ball.h */,
+				AA8F0DE316101D920053E97B /* Ball.mm */,
+				AA8F0DEC161020130053E97B /* Hole.h */,
+				AA8F0DED161020130053E97B /* Hole.mm */,
 			);
 			name = Physics;
 			sourceTree = "<group>";
@@ -401,7 +436,14 @@
 		DCC1A0D613A94EC0005BD75D = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				AA91ECF3161003EE00632DE0 /* Default.png */,
+=======
+				AA8F0DEF161035670053E97B /* CCMask.h */,
+				AA8F0DF0161035670053E97B /* CCMask.m */,
+				AA91ECF3161003EE00632DE0 /* Default.png */,
+				AA8F0DE816101E410053E97B /* Constants.h */,
+>>>>>>> Moving files around and fixing fixes implementation.
 				AA8412EC160E3A200066CF56 /* Physics */,
 				AAE31265160C27E800A55794 /* Scenes */,
 				AADAF7EA160BF56200474E93 /* Menus */,
@@ -810,6 +852,15 @@
 				AA8412FA160E3A3C0066CF56 /* ContactListener.mm in Sources */,
 				AA8412FC160E3A3C0066CF56 /* GLES-Render.mm in Sources */,
 				AA91EC58160FFFA900632DE0 /* GameBackground.m in Sources */,
+<<<<<<< HEAD
+=======
+				AA8F0DE116101CC90053E97B /* BodyNode.mm in Sources */,
+				AA8F0DE416101D920053E97B /* Ball.mm in Sources */,
+				AA8F0DE716101E250053E97B /* Helper.mm in Sources */,
+				AA8F0DEB16101F3B0053E97B /* GB2ShapeCache.mm in Sources */,
+				AA8F0DEE161020130053E97B /* Hole.mm in Sources */,
+				AA8F0DF1161035670053E97B /* CCMask.m in Sources */,
+>>>>>>> Moving files around and fixing fixes implementation.
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

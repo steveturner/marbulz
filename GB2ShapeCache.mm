@@ -267,7 +267,8 @@ public:
 
 -(float) ptmRatio
 {
-    return ptmRatio_;
+	return 240;
+ //   return ptmRatio_;
 }
 
 

@@ -7,7 +7,9 @@
 //
 
 #import "BodyNode.h"
-
-@interface Ball : BodyNode
+@interface Ball : BodyNode {
+	
+}
++(id) newBallInWorld:(b2World*)world withPos:(CGPoint)pos;
 
 @end
