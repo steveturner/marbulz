@@ -8,6 +8,7 @@
 
 #import "GameScene.h"
 #import "SimpleAudioEngine.h"
+#import "Box2DDebugLayer.h"
 
 @interface GameScene (PrivateMethods)
 @end
@@ -33,6 +34,12 @@
 		CCLOG(@"%@ init", NSStringFromClass([self class]));
 		
 		CCDirector* director = [CCDirector sharedDirector];
+		
+		
+		// init the box2d world
+		b2Vec2 gravity = b2Vec2(0.0f, -10.0f);
+		world = new b2World(gravity);
+		world->SetAllowSleeping(YES);
 		
 		CCSprite* sprite = [CCSprite spriteWithFile:@"ship.png"];
 		sprite.position = director.screenCenter;

@@ -7,6 +7,10 @@
 //
 
 #import "cocos2d.h"
+#import "Box2D.h"
+#import "GLES-Render.h"
+#import "ContactListener.h"
+
 
 // class forwards to avoid #import at header level (speeds up compilation)
 @class GameBackground;
@@ -23,7 +27,11 @@
 	int helloWorldFontSize;
 	
 	
+	b2World* world;
+	ContactListener* contactListener;
 	
+	GLESDebugDraw* debugDraw;
+
 	
 	
 	

@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AADAF802160BF84D00474E93 /* MainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = AADAF801160BF84D00474E93 /* MainMenu.m */; };
+		AA8412F6160E3A3C0066CF56 /* Box2DDebugLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA8412EF160E3A3C0066CF56 /* Box2DDebugLayer.mm */; };
+		AA8412F7160E3A3C0066CF56 /* Box2DDebugLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA8412EF160E3A3C0066CF56 /* Box2DDebugLayer.mm */; };
+		AA8412FA160E3A3C0066CF56 /* ContactListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA8412F3160E3A3C0066CF56 /* ContactListener.mm */; };
+		AA8412FB160E3A3C0066CF56 /* ContactListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA8412F3160E3A3C0066CF56 /* ContactListener.mm */; };
+		AA8412FC160E3A3C0066CF56 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA8412F5160E3A3C0066CF56 /* GLES-Render.mm */; };
+		AA8412FD160E3A3C0066CF56 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA8412F5160E3A3C0066CF56 /* GLES-Render.mm */; };
+		AADAF802160BF84D00474E93 /* MainMenu.mm in Sources */ = {isa = PBXBuildFile; fileRef = AADAF801160BF84D00474E93 /* MainMenu.mm */; };
 		DC1BE6A014F417CC00F49D25 /* Ubuntu-B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC1BE68C14F417CC00F49D25 /* Ubuntu-B.ttf */; };
 		DC1BE6A114F417CC00F49D25 /* Ubuntu-BI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC1BE68D14F417CC00F49D25 /* Ubuntu-BI.ttf */; };
 		DC1BE6A214F417CC00F49D25 /* Ubuntu-C.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC1BE68E14F417CC00F49D25 /* Ubuntu-C.ttf */; };
@@ -60,8 +66,8 @@
 		DCC1A27013A94EE6005BD75D /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = DCC1A26F13A94EE6005BD75D /* icon.icns */; };
 		DCC1A3A913A94F1A005BD75D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC1A38E13A94F1A005BD75D /* AppDelegate.m */; };
 		DCC1A3AA13A94F1A005BD75D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC1A38E13A94F1A005BD75D /* AppDelegate.m */; };
-		DCC1A3AB13A94F1A005BD75D /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC1A39013A94F1A005BD75D /* GameScene.m */; };
-		DCC1A3AC13A94F1A005BD75D /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC1A39013A94F1A005BD75D /* GameScene.m */; };
+		DCC1A3AB13A94F1A005BD75D /* GameScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = DCC1A39013A94F1A005BD75D /* GameScene.mm */; };
+		DCC1A3AC13A94F1A005BD75D /* GameScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = DCC1A39013A94F1A005BD75D /* GameScene.mm */; };
 		DCC1A3AD13A94F1A005BD75D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC1A39113A94F1A005BD75D /* main.m */; };
 		DCC1A3AE13A94F1A005BD75D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC1A39113A94F1A005BD75D /* main.m */; };
 		DCC1A3AF13A94F1A005BD75D /* config.lua in Resources */ = {isa = PBXBuildFile; fileRef = DCC1A39513A94F1A005BD75D /* config.lua */; };
@@ -71,8 +77,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA8412EE160E3A3C0066CF56 /* Box2DDebugLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Box2DDebugLayer.h; sourceTree = "<group>"; };
+		AA8412EF160E3A3C0066CF56 /* Box2DDebugLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Box2DDebugLayer.mm; sourceTree = "<group>"; };
+		AA8412F2160E3A3C0066CF56 /* ContactListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactListener.h; sourceTree = "<group>"; };
+		AA8412F3160E3A3C0066CF56 /* ContactListener.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ContactListener.mm; sourceTree = "<group>"; };
+		AA8412F4160E3A3C0066CF56 /* GLES-Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLES-Render.h"; sourceTree = "<group>"; };
+		AA8412F5160E3A3C0066CF56 /* GLES-Render.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "GLES-Render.mm"; sourceTree = "<group>"; };
 		AADAF800160BF84D00474E93 /* MainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenu.h; path = Menus/MainMenu.h; sourceTree = "<group>"; };
-		AADAF801160BF84D00474E93 /* MainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenu.m; path = Menus/MainMenu.m; sourceTree = "<group>"; };
+		AADAF801160BF84D00474E93 /* MainMenu.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MainMenu.mm; path = Menus/MainMenu.mm; sourceTree = "<group>"; };
 		DC1BE68614F417CC00F49D25 /* copyright.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = copyright.txt; sourceTree = "<group>"; };
 		DC1BE68914F417CC00F49D25 /* LICENCE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE.txt; sourceTree = "<group>"; };
 		DC1BE68C14F417CC00F49D25 /* Ubuntu-B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-B.ttf"; sourceTree = "<group>"; };
@@ -132,7 +144,7 @@
 		DCC1A38D13A94F1A005BD75D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DCC1A38E13A94F1A005BD75D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DCC1A38F13A94F1A005BD75D /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = Projectfiles/GameScene.h; sourceTree = "<group>"; };
-		DCC1A39013A94F1A005BD75D /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameScene.m; path = Projectfiles/GameScene.m; sourceTree = "<group>"; };
+		DCC1A39013A94F1A005BD75D /* GameScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GameScene.mm; path = Projectfiles/GameScene.mm; sourceTree = "<group>"; };
 		DCC1A39113A94F1A005BD75D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DCC1A39213A94F1A005BD75D /* Prefix-iOS.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Prefix-iOS.pch"; sourceTree = "<group>"; };
 		DCC1A39313A94F1A005BD75D /* Prefix-Mac.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Prefix-Mac.pch"; sourceTree = "<group>"; };
@@ -178,11 +190,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA8412EC160E3A200066CF56 /* Physics */ = {
+			isa = PBXGroup;
+			children = (
+				AA8412EE160E3A3C0066CF56 /* Box2DDebugLayer.h */,
+				AA8412EF160E3A3C0066CF56 /* Box2DDebugLayer.mm */,
+				AA8412F2160E3A3C0066CF56 /* ContactListener.h */,
+				AA8412F3160E3A3C0066CF56 /* ContactListener.mm */,
+				AA8412F4160E3A3C0066CF56 /* GLES-Render.h */,
+				AA8412F5160E3A3C0066CF56 /* GLES-Render.mm */,
+			);
+			name = Physics;
+			sourceTree = "<group>";
+		};
 		AADAF7EA160BF56200474E93 /* Menus */ = {
 			isa = PBXGroup;
 			children = (
 				AADAF800160BF84D00474E93 /* MainMenu.h */,
-				AADAF801160BF84D00474E93 /* MainMenu.m */,
+				AADAF801160BF84D00474E93 /* MainMenu.mm */,
 			);
 			name = Menus;
 			sourceTree = "<group>";
@@ -191,7 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				DCC1A38F13A94F1A005BD75D /* GameScene.h */,
-				DCC1A39013A94F1A005BD75D /* GameScene.m */,
+				DCC1A39013A94F1A005BD75D /* GameScene.mm */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -221,6 +246,7 @@
 		DCC1A0D613A94EC0005BD75D = {
 			isa = PBXGroup;
 			children = (
+				AA8412EC160E3A200066CF56 /* Physics */,
 				AAE31265160C27E800A55794 /* Scenes */,
 				AADAF7EA160BF56200474E93 /* Menus */,
 				DCC1A38C13A94F1A005BD75D /* Projectfiles */,
@@ -473,9 +499,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCC1A3A913A94F1A005BD75D /* AppDelegate.m in Sources */,
-				DCC1A3AB13A94F1A005BD75D /* GameScene.m in Sources */,
+				DCC1A3AB13A94F1A005BD75D /* GameScene.mm in Sources */,
 				DCC1A3AD13A94F1A005BD75D /* main.m in Sources */,
-				AADAF802160BF84D00474E93 /* MainMenu.m in Sources */,
+				AADAF802160BF84D00474E93 /* MainMenu.mm in Sources */,
+				AA8412F6160E3A3C0066CF56 /* Box2DDebugLayer.mm in Sources */,
+				AA8412FA160E3A3C0066CF56 /* ContactListener.mm in Sources */,
+				AA8412FC160E3A3C0066CF56 /* GLES-Render.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,8 +513,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCC1A3AA13A94F1A005BD75D /* AppDelegate.m in Sources */,
-				DCC1A3AC13A94F1A005BD75D /* GameScene.m in Sources */,
+				DCC1A3AC13A94F1A005BD75D /* GameScene.mm in Sources */,
 				DCC1A3AE13A94F1A005BD75D /* main.m in Sources */,
+				AA8412F7160E3A3C0066CF56 /* Box2DDebugLayer.mm in Sources */,
+				AA8412FB160E3A3C0066CF56 /* ContactListener.mm in Sources */,
+				AA8412FD160E3A3C0066CF56 /* GLES-Render.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
