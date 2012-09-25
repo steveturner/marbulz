@@ -1,15 +1,12 @@
 #import "GameScene.h"
-<<<<<<< HEAD
 #import "SimpleAudioEngine.h"
 #import "Box2DDebugLayer.h"
 #import "GameBackground.h"
-=======
 #import "Ball.h"
 #import "Hole.h"
 #import "Helper.h"
 #import "CCMask.h"
 //#import "EndGameScene.h"
->>>>>>> Moving files around and fixing fixes implementation.
 
 @interface GameScene (PrivateMethods)
 -(void)initBox2dWorld;
@@ -41,7 +38,6 @@ static GameScene* instanceOfGameScene;
 		
 		self.isAccelerometerEnabled = YES;
 		
-<<<<<<< HEAD
 		background = [GameBackground background];
 		[self addChild:background z:0];
 		// init the box2d world
@@ -59,10 +55,9 @@ static GameScene* instanceOfGameScene;
 		
 		
 		CCSprite* sprite = [CCSprite spriteWithFile:@"Ball_6.png"];
-		sprite.position = director.screenCenter;
+		sprite.position = [CCDirector sharedDirector].screenCenter;
 		sprite.scale = 0;
 		[self addChild:sprite];
-=======
 		CGSize screenSize = [[CCDirector sharedDirector] winSize];
 		
 		[self initBox2dWorld];

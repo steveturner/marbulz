@@ -38,17 +38,14 @@ typedef enum
 	b2World* world;
 	ContactListener* contactListener;
 	GLESDebugDraw* debugDraw;
-<<<<<<< HEAD
-	
-	
+
 	// in z order:
 	GameBackground* background;
 
 	
 	
 	
-=======
->>>>>>> Moving files around and fixing fixes implementation.
+
 }
 
 +(id) scene;
